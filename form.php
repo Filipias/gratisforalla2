@@ -12,7 +12,7 @@
 
 <body>
     <?php include("./includes/header.php"); ?>
-	<a href="index.php"><p>Tillbaka</p></a>
+	<a href="index.php"><button type="button" class="btn btn-primary">Tillbaka</button></a>
     <form method="POST" action="./run/skicka.php">
 	   <div class="formular">
 		<div class="form-group">
