@@ -5,9 +5,14 @@
 }
 
 .header {
-    background-image:url("./images/header.jpg");
-	padding:11%;
-	width:100%;
+    background-image: url("./images/header.jpg");
+    padding: 11%;
+    width: 100%;
+}
+
+.header_text {
+    font-size: 50px;
+    color: #FFFFFF;
 }
 
 #tillbaka {
@@ -75,6 +80,13 @@ howto {
     background-color: #444444;
 }
 
+.return_to_top {
+    text-align: right;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .footer_text {
     color: #FFF;
     font-size: 20px;
@@ -104,16 +116,16 @@ howto {
     font-size: 25px;
 }
 
-#formLogin{
-	max-width:30%;
-	margin: auto;
+#formLogin {
+    max-width: 30%;
+    margin: auto;
 }
 
-#formIsh{
-	margin: auto;
+#formIsh {
+    margin: auto;
 }
 
-#bodyIsh{
-	margin-left:10px;
-	margin-right:10px;
+#bodyIsh {
+    margin-left: 10px;
+    margin-right: 10px;
 }
