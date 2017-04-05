@@ -11,7 +11,7 @@
 
 .header_text {
     font-size: 50px;
-	padding-top: 12%;
+    padding-top: 12%;
     padding-bottom: 12%;
     padding-left: 11%;
     color: #FFFFFF;
@@ -127,10 +127,8 @@ howto {
     margin: auto;
 }
 
-#bodyIsh {
+#bodyIsh {}
 
-}
-
-#buttonLogin{
-	margin-top:-100px;
+#buttonLogin {
+    margin: 10px;
 }
