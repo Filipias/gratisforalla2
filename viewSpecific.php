@@ -1,3 +1,14 @@
+<?php
+session_start();
+	
+	if($_SESSION['rank'] == 0){
+			header("location: status.php");
+		}
+		
+	if(!isset($_SESSION['username']) || (trim($_SESSION['username']) =='')) {
+		header("location: status.php");
+	}
+?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -27,6 +38,18 @@
 		<p> <b>Email:</b> <?php echo $row['email'];?></p>
 		<p> <b>Telefonnummer:</b> <?php echo $row['phone'];?></p>
 		<p> <b>Beskrivning hemsida:<br></b> <?php echo $row['descriptionSite'];?></p>
+		<p> <b>Uppdatera status:</b>
+			<form action="/action_page.php">
+				<select name="cars">
+					<option value="volvo">Under granskning</option>
+					<option value="saab">Under konstruktion</option>
+					<option value="fiat">Mer information behövs</option>
+					<option value="audi">Avslagen</option>
+				</select>
+				<br><br>
+				<input type="submit">
+			</form>
+ </p>
 	</div>
 	
 <?php

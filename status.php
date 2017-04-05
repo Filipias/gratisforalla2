@@ -2,13 +2,9 @@
 	include("/includes/connection.php");
 	
 	session_start();
-	
-	if($_SESSION['rank'] == 0){
-			header("location: status.php");
-		}
-		
+
 	if(!isset($_SESSION['username']) || (trim($_SESSION['username']) =='')) {
-		header("location: status.php");
+		header("location: loginSite.php");
 	}
 ?>
 <html>
@@ -24,29 +20,27 @@
 	<?php include("./includes/header.php"); ?>
 	<div id="bodyIsh">
 		<div class="info">
-			<p>Inloggad som: <?php echo $_SESSION['id'] ?></p>
+			<p>Inloggad som: <?php echo $_SESSION['username'] ?></p>
 		</div>
 		<div class="howto">
 			<table class="table table-striped">
 					<tr>
-						<th>Namn</th>
-						<th>email</th>
-						<th>Telefonnummer</th>
-						<th>Se detaljer</th>
-						<th>Ta bort</th>
+						<th>Användarnamn</th>
+						<th>Status på din ansökan</th>
+						<th>Avbryt din ansökan</th>
 					</tr>
 					<?php
-						$sql = "SELECT * FROM lista";
+						$id = $_SESSION['id'];
+					
+						$sql = "SELECT * FROM lista WHERE id='$id'";
 						$result = $connection->query($sql);
 						if ($result->num_rows > 0) {
 							while($row = $result->fetch_assoc()) {
 					?>
 					<tr>
-						<td><?php echo $row['firstname'];?></td>
-						<td><?php echo $row['email'];?></td>
-						<td><?php echo $row['phone'];?></td>
-						<td><?php echo "<a href=\"./viewSpecific.php?id=" . $row['id'] . "\">Se detaljer</a>"; ?></td>				
-						<td><?php echo "<a href=\"./run/delete.php?id=" . $row['id'] . "\">Ta bort</a>"; ?></td>				
+						<td><?php echo $row['username'];?></td>
+						<td><?php echo $row['status'];?></td>			
+						<td><?php echo "<a href=\"./run/delete.php?id=" . $row['id'] . "\">Avbryt</a>"; ?></td>				
 					</tr>
 					<?php
 						}

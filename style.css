@@ -6,12 +6,14 @@
 
 .header {
     background-image: url("./images/header.jpg");
-    padding: 11%;
     width: 100%;
 }
 
 .header_text {
     font-size: 50px;
+	padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 11%;
     color: #FFFFFF;
 }
 
@@ -126,6 +128,9 @@ howto {
 }
 
 #bodyIsh {
-    margin-left: 10px;
-    margin-right: 10px;
+
+}
+
+#buttonLogin{
+	margin-top:-100px;
 }

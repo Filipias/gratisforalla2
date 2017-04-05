@@ -36,6 +36,14 @@
 			<textarea name="descriptionSite" class="form-control" rows="6" placeholder="Beskrivning"></textarea>
 		</div>
 		<div class="form-group">
+			<label for="formGroupExampleInput">Användarnamn :</label>
+			<input name="username" type="text" class="form-control" id="formGroupExampleInput" placeholder="Användarnamn">
+		</div>
+		<div class="form-group">
+			<label for="formGroupExampleInput">Lösenord :</label>
+			<input name="password" type="password" class="form-control" id="formGroupExampleInput" placeholder="Lösenord">
+		</div>
+		<div class="form-group">
 		<label for="exampleInputFile">Design(frivillig)</label>
 		<input type="file" id="exampleInputFile">
 		<p class="help-block">Om en önskad design finns ladda upp här.</p>

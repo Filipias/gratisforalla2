@@ -16,7 +16,7 @@
 
 	if ($username&&$password){
 		$username = mysql_real_escape_string($username);
-		$query = mysql_query("SELECT * FROM login WHERE password='$password' AND username='$username'");
+		$query = mysql_query("SELECT * FROM lista WHERE password='$password' AND username='$username'");
 
 		$numrows = mysql_num_rows($query);
 		
@@ -25,14 +25,24 @@
 				$dbusername = $row['username'];
 				$dbpassword = $row['password'];
 				$dbrank = $row['rank'];
-
+				$dbid = $row['id'];
 			}
 
 			if (($hash != $username['password'])){
-				header("Location: ../main.php");
-				$_SESSION['username']=$dbusername;
-				$_SESSION['password']=$dbpassword;
-				$_SESSION['rank']=$dbrank;
+				if ($dbrank == 1){
+					header("Location: ../main.php");
+					$_SESSION['username']=$dbusername;
+					$_SESSION['password']=$dbpassword;
+					$_SESSION['rank']=$dbrank;
+					$_SESSION['id']=$dbid;
+				}
+				else if($dbrank == 0){
+					header("Location: ../status.php");
+					$_SESSION['username']=$dbusername;
+					$_SESSION['password']=$dbpassword;
+					$_SESSION['rank']=$dbrank;
+					$_SESSION['id']=$dbid;
+				}
 			}
 			else{
 				header("Location: ../loginSite.php");

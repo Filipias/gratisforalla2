@@ -23,7 +23,6 @@
     </div>
     <div class="form_button">
         <a href="form.php"><button type="button" class="btn btn-primary">Till Formuläret</button></a>
-        <a href="main.php"><button type="button" class="btn btn-primary">Logga in</button></a>
     </div>
        
 	<?php include("./includes/footer.php"); ?>
