@@ -9,11 +9,11 @@
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 	
-	$sql = "INSERT INTO lista (firstname, description, email, phone, descriptionSite, username, password) VALUES('$firstname', '$description', '$mail', '$phone', '$descriptionSite', '$username', '$password')";
+	$sql = "INSERT INTO lista (firstname, description, email, phone, descriptionSite, username, password, status) VALUES('$firstname', '$description', '$mail', '$phone', '$descriptionSite', '$username', '$password', 'Mottagen')";
 	
 	if($connection->query($sql) === TRUE){  ?>
         <script>
-            window.location.replace("http://localhost/complete.php");
+            window.location.replace("http://localhost/gratisforalla2");
         </script>
  <?php
 	}

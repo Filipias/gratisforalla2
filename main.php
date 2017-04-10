@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 	<div id="bodyIsh">
 		<div class="info">
-			<p>Inloggad som: <?php echo $_SESSION['id'] ?></p>
+			<p>Inloggad som: <?php echo $_SESSION['username'] ?></p>
 		</div>
 		<div class="howto">
 			<table class="table table-striped">
@@ -40,6 +40,7 @@
 						$result = $connection->query($sql);
 						if ($result->num_rows > 0) {
 							while($row = $result->fetch_assoc()) {
+								if($row['rank'] == 0){
 					?>
 					<tr>
 						<td><?php echo $row['firstname'];?></td>
@@ -50,7 +51,8 @@
 					</tr>
 					<?php
 						}
-						} 
+						}
+						}
 						else {
 							echo "0 results";
 						}
