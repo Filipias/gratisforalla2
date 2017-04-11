@@ -8,7 +8,7 @@
 	
 	if($connection->query($sql) === TRUE){  ?>
         <script>
-            window.location.replace("http://localhost/gratisforalla/handleAdmin.php");
+            window.location.replace("http://localhost/gratisforalla2/handleAdmin.php");
         </script>
  <?php
 	}

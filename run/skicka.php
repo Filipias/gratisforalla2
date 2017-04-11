@@ -13,7 +13,7 @@
 	
 	if($connection->query($sql) === TRUE){  ?>
         <script>
-            window.location.replace("http://localhost/gratisforalla");
+            window.location.replace("http://localhost/gratisforalla2");
         </script>
  <?php
 	}

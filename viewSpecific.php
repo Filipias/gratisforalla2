@@ -26,6 +26,7 @@ session_start();
 	
 	if (isset($_GET['id']) && is_numeric($_GET['id'])){
 		$id = $_GET['id'];
+	}
 		$sql = "SELECT * FROM lista WHERE id = $id";
 		$result = $connection->query($sql);
 		
@@ -39,12 +40,12 @@ session_start();
 		<p> <b>Telefonnummer:</b> <?php echo $row['phone'];?></p>
 		<p> <b class="description">Beskrivning hemsida:<br></b> <?php echo $row['descriptionSite'];?></p>
 		<p> <b>Uppdatera status:</b>
-			<form action="/action_page.php">
-				<select name="cars">
-					<option value="volvo">Under granskning</option>
-					<option value="saab">Under konstruktion</option>
-					<option value="fiat">Mer information behövs</option>
-					<option value="audi">Avslagen</option>
+			<form action="./run/updateStatus.php">
+				<select name="status">
+					<option value="Under granskning">Under granskning</option>
+					<option value="Under kontruktion">Under konstruktion</option>
+					<option value="Mer information behövs">Mer information behövs</option>
+					<option value="Avslagen">Avslagen</option>
 				</select>
 				<br><br>
 				<input type="submit">
@@ -55,7 +56,6 @@ session_start();
 <?php
 			}
 		}
-	}
 	
 ?>
 <br>

@@ -47,7 +47,7 @@
                 <label for="exampleInputFile">Design(frivillig)</label>
                 <input type="file" id="exampleInputFile">
                 <p class="help-block">Om en önskad design finns ladda upp här.</p>
-                <button id="bone" class="btn btn-primary">Submit</button>
+                <button id="bone" class="btn btn-primary">Ansök</button>
             </div>
         </div>
     </form>
