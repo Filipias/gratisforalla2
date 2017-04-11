@@ -33,7 +33,7 @@
 						<th>email</th>
 						<th>Telefonnummer</th>
 						<th>Se detaljer</th>
-						<th>Ta bort</th>
+						<th>Ta bort <img id="info" src="images/info.png" class="masterTooltip" title="Då raderas även kundens konto." /></th>
 					</tr>
 					<?php
 						$sql = "SELECT * FROM lista";
@@ -60,6 +60,7 @@
 				</table>
 			</div>
 			<a href="index.php"><button class="btn btn-secondary">Startsida</button></a>
+			<a href="handleAdmin.php"><button class="btn btn-secondary">Hantera admins</button></a>
 			<a href="./run/logout.php"><button class="btn btn-secondary">Logga ut</button></a>
 		</div>
 		<?php include("./includes/footer.php"); ?>	

@@ -34,10 +34,10 @@ session_start();
 ?>
 	<div id="formIsh">
 		<p> <b>Namn:</b> <?php echo $row['firstname'];?></p>
-		<p> <b>Beskrivning:<br></b> <?php echo $row['description'];?></p>
+		<p> <b class="description">Beskrivning:<br></b> <?php echo $row['description'];?></p>
 		<p> <b>Email:</b> <?php echo $row['email'];?></p>
 		<p> <b>Telefonnummer:</b> <?php echo $row['phone'];?></p>
-		<p> <b>Beskrivning hemsida:<br></b> <?php echo $row['descriptionSite'];?></p>
+		<p> <b class="description">Beskrivning hemsida:<br></b> <?php echo $row['descriptionSite'];?></p>
 		<p> <b>Uppdatera status:</b>
 			<form action="/action_page.php">
 				<select name="cars">

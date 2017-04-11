@@ -133,3 +133,23 @@ howto {
 #buttonLogin {
     margin: 10px;
 }
+
+.description{
+	width:20px;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
+#info{
+	max-width:2%;
+	max-height:2%;
+}
