@@ -5,7 +5,8 @@
 }
 
 .header {
-    background-image: url("./images/header.jpg");
+    display: block;
+    background-image: url("./images/head.jpg");
     width: 100%;
 }
 
