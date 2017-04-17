@@ -55,9 +55,7 @@
 					?>
 				</table>
 			</div>
-			<a href="main.php"><button class="btn btn-secondary">Tillbaka</button></a>
 			<a href="add.php"><button class="btn btn-secondary">Lägg till admin</button></a>
-			<a href="./run/logout.php"><button class="btn btn-secondary">Logga ut</button></a>
 		</div>
 		<?php include("./includes/footer.php"); ?>	
 	</body>

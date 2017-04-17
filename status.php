@@ -1,4 +1,4 @@
-<?php 
+	<?php 
 	include("/includes/connection.php");
 	
 	session_start();
@@ -52,8 +52,6 @@
 					?>
 				</table>
 			</div>
-			<a href="index.php"><button class="btn btn-secondary">Startsida</button></a>
-			<a href="./run/logout.php"><button class="btn btn-secondary">Logga ut</button></a>
 		</div>
 		<?php include("./includes/footer.php"); ?>	
 	</body>

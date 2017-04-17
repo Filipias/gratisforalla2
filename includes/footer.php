@@ -8,6 +8,6 @@
         <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="images/instagram.png"></a>
     </div>
     <div class="footer_contact">
-        <p class="footer_text">Email : support@gratisforalla.se || Telefon : 090-10 11 12</p>
+        <p class="footer_text">Email: support@gratisforalla.se || Telefon: 090-10 11 12</p>
     </div>
 </div>

@@ -59,9 +59,6 @@
 					?>
 				</table>
 			</div>
-			<a href="index.php"><button class="btn btn-secondary">Startsida</button></a>
-			<a href="handleAdmin.php"><button class="btn btn-secondary">Hantera admins</button></a>
-			<a href="./run/logout.php"><button class="btn btn-secondary">Logga ut</button></a>
 		</div>
 		<?php include("./includes/footer.php"); ?>	
 	</body>
