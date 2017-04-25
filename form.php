@@ -12,7 +12,6 @@
 
 <body>
     <?php include("./includes/header.php"); ?>
-    <a href="index.php"><button id="tillbaka" type="button" class="btn btn-outline-secondary">Tillbaka</button></a>
     <form method="POST" action="./run/skicka.php">
         <div class="formular">
             <div class="form-group">
@@ -47,7 +46,8 @@
                 <label for="exampleInputFile">Design(frivillig)</label>
                 <input type="file" id="exampleInputFile">
                 <p class="help-block">Om en önskad design finns ladda upp här.</p>
-                <button id="bone" class="btn btn-primary">Submit</button>
+                <button id="bone" class="btn btn-primary">Ansök</button>
+                <a href="index.php"><button id="tillbaka" type="button" class="btn btn-primary">Tillbaka</button></a>
             </div>
         </div>
     </form>

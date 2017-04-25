@@ -29,25 +29,21 @@
 		<div class="howto">
 			<table class="table table-striped">
 					<tr>
-						<th>Namn</th>
-						<th>email</th>
-						<th>Telefonnummer</th>
-						<th>Se detaljer</th>
-						<th>Ta bort <img id="info" src="images/info.png" class="masterTooltip" title="Då raderas även kundens konto." /></th>
+						<th>Användarnamn</th>
+						<th>Byt lösenord</th>
+						<th>Ta bort</th>
 					</tr>
 					<?php
 						$sql = "SELECT * FROM lista";
 						$result = $connection->query($sql);
 						if ($result->num_rows > 0) {
 							while($row = $result->fetch_assoc()) {
-								if($row['rank'] == 0){
+								if($row['rank'] > 0){
 					?>
 					<tr>
-						<td><?php echo $row['firstname'];?></td>
-						<td><?php echo $row['email'];?></td>
-						<td><?php echo $row['phone'];?></td>
-						<td><?php echo "<a href=\"./viewSpecific.php?id=" . $row['id'] . "\">Se detaljer</a>"; ?></td>				
-						<td><?php echo "<a href=\"./run/delete.php?id=" . $row['id'] . "\">Ta bort</a>"; ?></td>				
+						<td><?php echo $row['username'];?></td>
+						<td><?php echo "<a href=\"./run/edit.php?id=" . $row['id'] . "\">Byt lösenord</a>"; ?></td>						
+						<td><?php if($row['rank'] == 1){echo "<a href=\"./run/deleteAdmin.php?id=" . $row['id'] . "\">Ta bort</a>"; }?></td>								
 					</tr>
 					<?php
 						}
@@ -59,6 +55,7 @@
 					?>
 				</table>
 			</div>
+			<a href="add.php"><button class="btn btn-secondary">Lägg till admin</button></a>
 		</div>
 		<?php include("./includes/footer.php"); ?>	
 	</body>

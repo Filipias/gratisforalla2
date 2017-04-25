@@ -29,7 +29,7 @@
 			}
 
 			if (($hash != $username['password'])){
-				if ($dbrank == 1){
+				if ($dbrank > 0){
 					header("Location: ../main.php");
 					$_SESSION['username']=$dbusername;
 					$_SESSION['password']=$dbpassword;
