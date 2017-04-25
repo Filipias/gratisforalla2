@@ -3,24 +3,26 @@
     margin: 0px;
     font-style: roboto;
 }
-body{
-	min-height:100%;
-   position:relative;
-   margin:0px;
-   padding:0px;
+
+body {
+    min-height: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px
 }
 
-.header {
-    display: block;
-    background-image: url("./images/head.jpg");
-    width: 100%;
+.sidebar {
+    background-color: #111111;
+    height: 100%;
+    width: 30%;
+    position: absolute;
 }
 
-.header_text {
-    font-size: 50px;
-    padding-top: 12%;
-    padding-bottom: 12%;
-    padding-left: 11%;
+.sidebar_header {
+    color: #FFFFFF;
+}
+
+.sidebar_links {
     color: #FFFFFF;
 }
 
@@ -43,13 +45,13 @@ body{
 
 .info {
     margin-bottom: 50px;
+    margin-left: 30%;
 }
 
 .info_title {
     text-align: center;
     font-size: 40px;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
 }
 
 .info_text {
@@ -58,8 +60,8 @@ body{
     margin-right: 100px;
 }
 
-howto {
-    margin-bottom: 50px;
+.howto {
+    margin-left: 30%;
 }
 
 .howto_title {
@@ -70,7 +72,6 @@ howto {
 .howto_under {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
 }
 
 .howto_text {
@@ -84,9 +85,9 @@ howto {
 }
 
 .footer {
-	bottom:0;
-	position:absolute;
-	width:100%;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
     background-color: #444444;
 }
 
@@ -129,7 +130,7 @@ howto {
 #formLogin {
     max-width: 30%;
     margin: auto;
-	padding-top:10px;
+    padding-top: 10px;
 }
 
 #formIsh {
@@ -142,22 +143,22 @@ howto {
     margin: 10px;
 }
 
-.description{
-	width:20px;
+.description {
+    width: 20px;
 }
 
 .tooltip {
-	display:none;
-	position:absolute;
-	border:1px solid #333;
-	background-color:#161616;
-	border-radius:5px;
-	padding:10px;
-	color:#fff;
-	font-size:12px Arial;
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 12px Arial;
 }
 
-#info{
-	max-width:2%;
-	max-height:2%;
+#info {
+    max-width: 2%;
+    max-height: 2%;
 }
