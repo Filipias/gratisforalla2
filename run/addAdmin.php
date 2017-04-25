@@ -13,6 +13,6 @@
  <?php
 	}
 	else{
-		echo "Fuck off";
+		echo "";
 	}
 ?>

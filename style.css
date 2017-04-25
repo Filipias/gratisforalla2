@@ -3,35 +3,25 @@
     margin: 0px;
     font-style: roboto;
 }
-
-body {
-    min-height: 100%;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+body{
+	min-height:100%;
+   position:relative;
+   margin:0px;
+   padding:0px;
 }
 
-body {
-    padding: 20px;
-}
-
-.sidebar {
+.header {
     display: block;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+    background-image: url("./images/head.jpg");
+    width: 100%;
 }
 
-.sidebar_header {
-    color: white;
-    font-size: 40px;
-    padding: 40px;
+.header_text {
+    font-size: 50px;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 11%;
+    color: #FFFFFF;
 }
 
 #tillbaka {
@@ -94,9 +84,9 @@ howto {
 }
 
 .footer {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
+	bottom:0;
+	position:absolute;
+	width:100%;
     background-color: #444444;
 }
 
@@ -139,7 +129,7 @@ howto {
 #formLogin {
     max-width: 30%;
     margin: auto;
-    padding-top: 10px;
+	padding-top:10px;
 }
 
 #formIsh {
@@ -152,22 +142,22 @@ howto {
     margin: 10px;
 }
 
-.description {
-    width: 20px;
+.description{
+	width:20px;
 }
 
 .tooltip {
-    display: none;
-    position: absolute;
-    border: 1px solid #333;
-    background-color: #161616;
-    border-radius: 5px;
-    padding: 10px;
-    color: #fff;
-    font-size: 12px Arial;
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
 }
 
-#info {
-    max-width: 2%;
-    max-height: 2%;
+#info{
+	max-width:2%;
+	max-height:2%;
 }
