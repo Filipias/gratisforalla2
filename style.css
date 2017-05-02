@@ -16,14 +16,33 @@ body {
     height: 100%;
     width: 30%;
     position: absolute;
+    display: block;
+}
+
+.sidebar:hover {
+    text-decoration: none;
 }
 
 .sidebar_header {
     color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: roboto;
+}
+
+.sidebar_header:hover {
+    text-decoration: none;
 }
 
 .sidebar_links {
     color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 3%;
+    font-style: roboto;
+}
+
+.sidebar_links:hover {
+    text-decoration: none;
 }
 
 #tillbaka {
@@ -112,9 +131,10 @@ body {
 }
 
 .formular {
-    margin-top: 50px;
-    margin-right: 400px;
-    margin-left: 50px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 34%;
+    max-width: 40%;
 }
 
 .form_title {
@@ -129,8 +149,9 @@ body {
 
 #formLogin {
     max-width: 30%;
-    margin: auto;
+    margin: auto auto;
     padding-top: 10px;
+    margin-top: 10%;
 }
 
 #formIsh {
