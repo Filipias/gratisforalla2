@@ -57,6 +57,5 @@
 			</div>
 			<a href="add.php"><button class="btn btn-secondary">Lägg till admin</button></a>
 		</div>
-		<?php include("./includes/footer.php"); ?>	
 	</body>
 <html>

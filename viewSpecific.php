@@ -61,6 +61,5 @@ session_start();
 <br>
 	<a href="main.php"><button type="button" class="btn btn-primary">Tillbaka</button></a>
 		<?php echo "<a href=\"./run/delete.php?id=" . $id . "\">Ta bort</a>"; ?>
-		<?php include("./includes/footer.php"); ?>
 	</body>
 </html>

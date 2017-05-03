@@ -50,13 +50,9 @@
                 <input type="file" id="exampleInputFile">
                 <p class="help-block">Om en önskad design finns ladda upp här.</p>
                 <button id="bone" class="btn btn-primary">Ansök</button>
-                <a href="index.php"><button id="tillbaka" type="button" class="btn btn-primary">Tillbaka</button></a>
             </div>
         </div>
     </form>
-    <?php
-		include("./includes/footer.php");
-    ?>
 </body>
 
 </html>

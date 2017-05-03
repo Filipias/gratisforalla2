@@ -21,12 +21,8 @@
 				<label for="password">Lösenord</label>
 				<input type="password" class="form-control" name="password" id="password" placeholder="Lösenord">
 			</div>
-			<a href="handleAdmin.php"><button type="button" class="btn btn-primary">Avbryt</button></a>
 			<button type="submit" class="btn btn-primary">Lägg till</button>
 		</form>
-    <?php
-		include("./includes/footer.php");
-    ?>
 </body>
 
 </html>
