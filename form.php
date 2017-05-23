@@ -14,7 +14,7 @@
 </header>
 
 <body>
-    <p class="info_title">Ansök</p>
+    <p class="form_title">Ansök</p>
     <form method="POST" action="./run/skicka.php">
         <div class="formular">
             <div class="form-group">
@@ -54,9 +54,6 @@
             </div>
         </div>
     </form>
-    <?php
-		include("./includes/footer.php");
-    ?>
 </body>
 
 </html>
