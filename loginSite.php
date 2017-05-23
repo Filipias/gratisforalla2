@@ -22,9 +22,7 @@
 				<label for="password">Lösenord</label>
 				<input type="password" class="form-control" name="password" id="password" placeholder="Lösenord">
 			</div>
-			<a href="index.php"><button type="button" class="btn btn-primary">Tillbaka</button></a>
 			<button type="submit" class="btn btn-primary">Logga in</button>
 		</form>
-		<?php include("./includes/footer.php"); ?>
 	</body>
 </html>
